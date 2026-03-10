@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "test",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ],
+  "functions": {
+    "api/index.mjs": {
+      "includeFiles": "dist/test/**"
+    }
+  }
+}
